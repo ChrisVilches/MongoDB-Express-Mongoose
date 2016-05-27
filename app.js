@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
+
 require('./models/Persons');
 require('./models/Hobbies');
 
@@ -14,6 +15,7 @@ mongoose.connect('mongodb://localhost/meantest');
 var routes = require('./routes/index');
 
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
